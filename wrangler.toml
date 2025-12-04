@@ -1,3 +1,10 @@
 name = "cf-hell2-world"
 main = "src/index.js"
 compatibility_date = "2025-12-01"
+
+[vars]
+SHEET_ID = "PLACEHOLDER"
+SHEET_NAME = "PLACEHOLDER"
+
+GOOGLE_CLIENT_EMAIL = { binding = "GOOGLE_CLIENT_EMAIL", secret = true }
+GOOGLE_PRIVATE_KEY = { binding = "GOOGLE_PRIVATE_KEY", secret = true }
