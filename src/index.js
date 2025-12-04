@@ -139,6 +139,7 @@ export default {
   async fetch(request, env, ctx) {
     ctx.waitUntil(logToGoogleSheet(request, env));
 
-    return new Response("Hello from Cloudflare Worker! 👋");
+    const RESPONSE_VERSION = "v.0.0.0.2.202406112106";
+    return new Response(`Hello from Cloudflare Worker! 👋 ${RESPONSE_VERSION}`);
   },
 };
